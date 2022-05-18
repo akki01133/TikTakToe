@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header{
+    font-size: 22px;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:40px;
+    background-color: #3786cbd2;
+}
+
+.title{
+    color:white;
+}
+
+.playerDisplay{
+    width:100%;
+    height:max-content;
+    font-size: 18px;
+    margin-top: 10px;
+    display:flex;
+    justify-content: center;
+}
+
+.playerDisplay> p > span{
+    font-size: 20px;
+}
+
+.main-container{
+    height: calc(100vh - 60px);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main{
+    max-height: max-content;
+    display: grid;
+    grid-gap: 2.5px;
+    grid-template-columns: auto auto auto;
+    max-width: max-content;
+}
+
+.tile{
+    height: 95px;
+    width: 95px;
+    background-color:rgba(238, 238, 238, 0.877);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    cursor: pointer;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.fa{
+    cursor: pointer;
+    padding:3px;
+}
+
+
+@media (min-width: 600px){
+.tile:hover{
+    color:#e65151f6;
+    background-color: #108cf288;
+}
+}
+
+.tile > span {
+    display: block;
+    font-size: 70px;
+    line-height: 48px;
+    height: 60px;
+
+  }
+
+.normal{
+    line-height: 60px;
+}

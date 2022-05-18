@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTakToe</title>
+    <link rel="icon" href="images/tic-tac-toe.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body onload="setTimeout(function(){window.scrollTo(0,1)},100)">
+
+    <header>
+        <div class="menu-left">
+            <i class="fa fa-bars " ></i>
+            <i class="fa fa-question-circle-o "></i>
+        </div>
+        <div class="title">
+          TikTakToe
+        </div>
+        <div class="menu-right">
+          <i class="fa fa-bar-chart"></i>
+          <i class="fa fa-cog "></i>
+        </div>
+      </header>
+
+      
+
+    <div class="main-container">
+        <div class="main">
+            <div class="normal tile" id='tile1' onclick="gameHandler('tile1')">
+                <span></span>
+            </div>
+            <div class="normal tile" id='tile2' onclick="gameHandler('tile2')">
+                <span></span>
+            </div>
+            <div class="normal tile" id='tile3' onclick="gameHandler('tile3')">
+                <span></span>
+            </div>
+            <div class="normal tile" id='tile4' onclick="gameHandler('tile4')">
+                <span></span>
+            </div>
+            <div class="normal tile" id='tile5' onclick="gameHandler('tile5')">
+                <span></span>
+            </div>
+            <div class="normal tile" id='tile6' onclick="gameHandler('tile6')">
+                <span></span>
+            </div>
+            <div class="normal tile" id='tile7' onclick="gameHandler('tile7')">
+                <span></span>
+            </div>
+            <div class="normal tile" id='tile8' onclick="gameHandler('tile8')">
+                <span></span>
+            </div>
+            <div class="normal tile" id='tile9' onclick="gameHandler('tile9')">
+                <span></span>
+            </div>
+        </div>
+
+        <div class="playerDisplay">
+            <p>Chance - <span id="currentPlayer">x</span></p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
