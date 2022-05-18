@@ -21,7 +21,7 @@ function gameHandlerWrapper() {
 
             if (winStatus == 1 - chance) {
                 setTimeout(() => {
-                    alert(`${chance == 0?'x':'o'} won`);
+                    alert(`${chance == 0?'o':'x'} won`);
                     resetGame();
                 }, 300);
             } else if (turnsPlayed == 9) {
